@@ -16,7 +16,7 @@ var connector = new builder.ChatConnector({
 var bot = new builder.UniversalBot(connector); //instanciar bot de tipo UniversalBot con conector
 server.post('api/messages', connector.listen());
 
-
+//probando
 //Dialogos
 bot.dialog('/',[
     function(session){
