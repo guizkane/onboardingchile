@@ -37,5 +37,3 @@ bot.dialog('/Descargas',require('./app/dialogs/descargas.js'));
 
 bot.dialog('/Buscar Empleados MS',require('./app/dialogs/buscadorempleados.js'));
 
-
-//PROBANDOOO
