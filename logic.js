@@ -18,22 +18,42 @@ server.post('api/messages', connector.listen());
 
 
 //Dialogos
-bot.dialog('/',[
-    function(session){
-    builder.Prompts.choice(session,'Hola, soy un bot de On-boarding. Puedo asistirte con los siguientes temas:','Glosario|Información General|Descargas|Buscar Empleado MS',{listStyle: builder.ListStyle.button});
-        },
-        function(session, results){
-            let menu = `/${results.response.entity}`
-            session.beginDialog(menu);
-        }
-]
-);
+bot.dialog('/', [
+    function (session) {
+        session.beginDialog('/Inicio');
+    },
+    function (session, results) {
+        session.beginDialog(seleccionMenu(results));
 
+    },
+    function (session, results) {
+        session.beginDialog(seleccionMenu(results));
+    }
+
+]);
+bot.dialog('/Legal',require('./app/dialogs/legal.js'));
+bot.dialog('/Inicio',require('./app/dialogs/inicio.js'));
 bot.dialog('/Glosario',require('./app/dialogs/glosario.js'));
-
 bot.dialog('/Información General',require('./app/dialogs/informaciongeneral.js'));
-
 bot.dialog('/Descargas',require('./app/dialogs/descargas.js'));
 
 bot.dialog('/Buscar Empleados MS',require('./app/dialogs/buscadorempleados.js'));
 
+
+
+
+
+
+
+//---------------------------------------------------------------
+
+
+var seleccionMenu = function(objetoEleccion){
+    let valoreleccion = `/${objetoEleccion.response.entity}`
+    return(valoreleccion);
+};
+
+var menuRecursivo = function(session, results){
+    session.beginDialog(seleccionMenu(results));
+    return()
+}
