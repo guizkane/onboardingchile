@@ -36,7 +36,9 @@ bot.dialog('/Inicio',require('./app/dialogs/inicio.js'));
 bot.dialog('/Glosario',require('./app/dialogs/glosario.js'));
 bot.dialog('/Información General',require('./app/dialogs/informaciongeneral.js'));
 bot.dialog('/Descargas',require('./app/dialogs/descargas.js'));
-bot.dialog('/Buscar Empleados MS',require('./app/dialogs/buscadorempleados.js'));
+bot.dialog('/Buscar Empleados MS', require('./app/dialogs/buscadorempleados.js'));
+bot.dialog('/Comercial', require('./app/dialogs/comercial.js'));
+bot.dialog('/Nuevo Empleado', require('./app/dialogs/nuevoempleado.js'));
 
 
 
