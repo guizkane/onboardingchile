@@ -2,7 +2,7 @@ var builder = require('botbuilder'); //usar libreria botbuilder
 var restify = require('restify'); //usar libreria restify webservice
 
 module.exports = ([function (session) {
-    builder.Prompts.choice(session, 'Necesitas ayuda con:', 'Lista de Precios|Pedir Descuentos|Pedir BIF|POE|PO Exception', { listStyle: builder.ListStyle.button });
+    builder.Prompts.choice(session, 'Necesitas ayuda con:', 'Lista de Precios|Pedir Descuentos|Pedir BIF|PO', { listStyle: builder.ListStyle.button });
     },
     function (session, results) {
   

@@ -1,3 +1,3 @@
 module.exports = function (session) {
-       session.send('Estas en Buscador de empleados');
+    session.send('Para buscar a un empleado de Microsoft debes acceder a http://mswho/');
     }

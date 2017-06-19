@@ -29,7 +29,9 @@ bot.dialog('/', [
     function (session, results) {
         session.beginDialog(seleccionMenu(results));
     }
-]).triggerAction({matches: /^inicio$/i });
+]).triggerAction({ matches: /^inicio$/i });
+
+
 
 bot.dialog('/Legal',require('./app/dialogs/legal.js'));
 bot.dialog('/Inicio',require('./app/dialogs/inicio.js'));
