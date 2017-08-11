@@ -37,7 +37,7 @@ module.exports = function (session) {
         var compliance = new builder.HeroCard(session)
             .title('Compliance')
             .subtitle('Información sobre compliance')
-            .text('Aquí podrás ir al portal de MS Policy e informarte sobre lsa normas de compliance para Microsoft')
+            .text('Aquí podrás ir al portal de MS Policy e informarte sobre las normas de compliance para Microsoft')
             .images([
                 builder.CardImage.create(session, 'http://www.geocities.ws/everything4u/mic.jpg')
             ])

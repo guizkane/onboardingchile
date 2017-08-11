@@ -16,7 +16,16 @@ var connector = new builder.ChatConnector({
 var bot = new builder.UniversalBot(connector); //instanciar bot de tipo UniversalBot con conector
 server.post('api/messages', connector.listen());
 
-
+// Send welcome when conversation with bot is started, by initiating the root dialog
+bot.on('conversationUpdate', function (message) {
+    if (message.membersAdded) {
+        message.membersAdded.forEach(function (identity) {
+            if (identity.id === message.address.bot.id) {
+                bot.beginDialog(message.address, '/');
+            }
+        });
+    }
+});
 //Dialogos
 bot.dialog('/', [
     function (session) {
