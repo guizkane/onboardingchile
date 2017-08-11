@@ -41,7 +41,16 @@ bot.dialog('/', [
 ]).triggerAction({ matches: /^inicio$/i })
 
     //Volver a menú inicial (agregar luis)
-    .beginDialogAction('Inicio', '/', { matches: /^volver$/i });
+    .beginDialogAction('Inicio', '/Inicio', { matches: /^Inicio$/i })
+    .beginDialogAction('Legal', '/Legal', { matches: /^Legal$/i })
+    .beginDialogAction('Glosario', '/Glosario', { matches: /^Glosario$/i })
+    .beginDialogAction('Información General', '/Información General', { matches: /^Información General$/i })
+    .beginDialogAction('Descargas', '/Descargas', { matches: /^Descargas$/i })
+    .beginDialogAction('Buscar Empleados MS', '/Buscar Empleados MS', { matches: /^Buscar Empleados MS$/i })
+    .beginDialogAction('Comercial', '/Comercial', { matches: /^Comercial$/i })
+    .beginDialogAction('Nuevo Empleado', '/Nuevo Empleado', { matches: /^Nuevo Empleado$/i })
+    .beginDialogAction('Volver', '/Inicio', { matches: /^Volver$/i })
+;
 
 
 
