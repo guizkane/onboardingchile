@@ -40,7 +40,7 @@ bot.dialog('/', [
     }
 ]).triggerAction({ matches: /^inicio$/i })
 
-    //Volver a menú inicial (agregar luis)
+    //Comandos globales (agregar LUIS)
     .beginDialogAction('Inicio', '/Inicio', { matches: /^Inicio$/i })
     .beginDialogAction('Legal', '/Legal', { matches: /^Legal$/i })
     .beginDialogAction('Glosario', '/Glosario', { matches: /^Glosario$/i })
