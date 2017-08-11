@@ -41,7 +41,7 @@ bot.dialog('/', [
 ]).triggerAction({ matches: /^inicio$/i })
 
     //Volver a menú inicial (agregar luis)
-    .beginDialogAction('Inicio', '/Inicio', { matches: /^volver$/i });
+    .beginDialogAction('Inicio', '/', { matches: /^volver$/i });
 
 
 
