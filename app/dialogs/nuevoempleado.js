@@ -16,11 +16,11 @@ function (session, results) {
 
             break;
         case 'Organigrama':
-            session.send('En el siguiente link: http://who/ogflogel podrás ver un organigrama con Oliver Flogel en la cabecera.');
+            session.send('En el siguiente link: http://mswho/is/seradema podrás ver un organigrama con Sergio Rademacher en la cabecera.');
 
             break;
         case 'Cabify':
-            session.send('Para pedir un Cabify debes bajar la aplicación (iOS o Android) o bien ingresar a la página web www.cabify.cl y acceder a tu cuenta. Tu usuario será tu correo corporativo @microsoft y la contraseña deberás crearla mediante el correo de activación que se te enviará al momento de creación de tu cuenta Cabify.Si no te llega el correo de activación, o si bien este correo caduca, podrás crear la cuenta utilizando la opción de "Recuperar Contraseña" de Cabify.');
+            session.send('Para pedir un Cabify debes bajar la aplicaci&oacute;n (iOS o Android) o bien ingresar a la página web www.cabify.cl y acceder a tu cuenta. Tu usuario ser&aacute; tu correo corporativo @microsoft y la contraseña deber&aacute;s crearla mediante el correo de activaci&oacute;n que se te enviar&aacute; al momento de creaci&oacute;n de tu cuenta Cabify.Si no te llega el correo de activación, o si bien este correo caduca, podrás crear la cuenta utilizando la opción de "Recuperar Contraseña" de Cabify.');
 
             break;
         case 'Impresoras':
