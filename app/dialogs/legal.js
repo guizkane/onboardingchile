@@ -27,7 +27,7 @@ module.exports = function (session) {
         var certificados = new builder.HeroCard(session)
             .title('Certificados')
             .subtitle('Certificados y Poderes MS Chile y MSLI')
-            .text('Aquí podrás descargar certificados de vigencia y poderes para Microsoft Chile y MSLI')
+            .text('Aqu&iacute; podr&aacute;s descargar certificados de vigencia y poderes para Microsoft Chile y MSLI')
             .images([
                 builder.CardImage.create(session, 'https://digitalsynopsis.com/wp-content/uploads/2013/12/microsoft-family-logos.gif')
             ])

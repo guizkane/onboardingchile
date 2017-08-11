@@ -38,7 +38,10 @@ bot.dialog('/', [
     function (session, results) {
         session.beginDialog(seleccionMenu(results));
     }
-]).triggerAction({ matches: /^inicio$/i });
+]).triggerAction({ matches: /^inicio$/i })
+
+    //Volver a menú inicial (agregar luis)
+    .beginDialogAction('/Inicio', '/Inicio', { matches: /^volver$/i });
 
 
 
