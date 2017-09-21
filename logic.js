@@ -50,6 +50,8 @@ bot.dialog('/', [
     .beginDialogAction('Comercial', '/Comercial', { matches: /^Comercial$/i })
     .beginDialogAction('Nuevo Empleado', '/Nuevo Empleado', { matches: /^Nuevo Empleado$/i })
     .beginDialogAction('Volver', '/Inicio', { matches: /^Volver$/i })
+    .beginDialogAction('Recursos Humanos', '/Recursos Humanos', { matches: /^Recursos Humanos$/i })
+   
 ;
 
 
@@ -62,6 +64,8 @@ bot.dialog('/Descargas',require('./app/dialogs/descargas.js'));
 bot.dialog('/Buscar Empleados MS', require('./app/dialogs/buscadorempleados.js'));
 bot.dialog('/Comercial', require('./app/dialogs/comercial.js'));
 bot.dialog('/Nuevo Empleado', require('./app/dialogs/nuevoempleado.js'));
+bot.dialog('/Recursos Humanos', require('./app/dialogs/hr.js'));
+
 
 
 

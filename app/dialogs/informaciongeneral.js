@@ -3,7 +3,7 @@ var restify = require('restify'); //usar libreria restify webservice
 
 module.exports = function (session) {
     
-    builder.Prompts.choice(session, 'Información general:', 'Legal|Comercial|Recursos Humanos|Nuevo Empleado|Otros', { listStyle: builder.ListStyle.button });
+    builder.Prompts.choice(session, 'Información general:', 'Glosario|Buscar Empleados MS|Nuevo Empleado|Descargas', { listStyle: builder.ListStyle.button });
 },
     function (session, results) {
         session.endDialogWithResult(results);
