@@ -1,21 +1,11 @@
 {
-  "name": "bots",
+  "name": "onboardingbotchilev2",
   "version": "1.0.0",
-  "main": "holabot.js",
+  "description": "onboarding bot for chile",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "hi"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "botbuilder": "^3.8.4",
-    "cheerio": "^1.0.0-rc.1",
-    "express": "^4.15.3",
-    "package": "^1.0.1",
-    "request": "^2.81.0",
-    "restify": "^4.3.0"
-  },
-  "devDependencies": {},
-  "description": ""
+  "author": "pelgueta",
+  "license": "ISC"
 }
