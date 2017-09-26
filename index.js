@@ -8,8 +8,8 @@ server.listen(process.env.port || process.env.PORT || 3978, function(){
 });
 //conexión con credenciales
 var connector = new builder.ChatConnector({
-     appId:'APP_ID',
-    appPassword:'PASS'
+    appId: process.env.APP_ID,
+    appPassword: process.env.PASS
 });
 
 //creación de bot con Universalbot
